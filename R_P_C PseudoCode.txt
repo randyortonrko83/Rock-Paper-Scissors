@@ -1,0 +1,6 @@
+Rock-Paper Scissors PseudoCode
+
+1. create function to achieve this
+2. use Math.random(mind case-sensitive)to deploy number between 0 to 1(1 does not gets printed)
+3. find a way to print a number that randomises between 1, 2 and 3
+4. using if conditionals take 1, 2 and 3 to judge the output string to randomize the string.
