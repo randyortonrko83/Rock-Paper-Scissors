@@ -24,3 +24,24 @@ function computerPlay() {
 
 computerPlay();
 
+function playRound(playerSelection, computerSelection) {
+
+       let player = playerSelection.toLowerCase();
+       let player1 = player.substr(0,1).toUpperCase();
+           player = player.substr(1);
+       let final = player1 + player;
+       
+       
+
+      
+       "Rock" || "Paper" || "Scissors";
+
+      
+      
+}
+
+const playerSelection = "rock";
+const computerSelection = computerPlay();
+
+
+

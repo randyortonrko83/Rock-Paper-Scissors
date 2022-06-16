@@ -1,6 +1,6 @@
 Rock-Paper Scissors PseudoCode
 
-Objective: To create R_P_C function that returned randomly by the computer
+Objective: To create computerPlay function that returned randomly by the computer
 
 1. create function to achieve this
 2. use Math.random(mind case-sensitive)to deploy number between 0 to 1(1 does not gets printed)
@@ -9,4 +9,26 @@ Objective: To create R_P_C function that returned randomly by the computer
 5. for the purpose of dividing the randomness of the return string five empty string is inserted at array
 
 Result: Success
+
+Objective: To create playRound function that plays a single round of Rock-Paper-Scissors.
+
+1. function with two parameters called playerSelection and computerSelection is created
+2. computerSelection is generated randomly from computerPlay
+3. playerSelection is generated from user
+4. the result is validated in the function inside
+5. winner is announced via alert
+
+  Branched Pseudocode
+  Objective: To create a code that takes the user input validates that input and gives the output
+
+   1. the input must be converted to upper and lowercase to avoid any case sensitivity issues
+   2. inside the function the validation between randomly generated rock, paper, scissor and user input must take place.
+          (i) recieve the user input
+          (ii) recieve the computer input
+          (iii) store the user input in a variable for case conversion
+          (iv) store the computer input in a variable
+          (v) use if conditionals to compare the user input to the OR operater (test OR operater) and return the original string to compare with the randomly generated computer one.
+          (vi) use if conditionals again to compare the result of the operator(user) with the computer to tell the ultimate end result.
+   3. after the validation is complete a result string is returned in the form of alert or return command.
+
 
