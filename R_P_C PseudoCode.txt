@@ -32,3 +32,13 @@ Objective: To create playRound function that plays a single round of Rock-Paper-
    3. after the validation is complete a result string is returned in the form of alert or return command.
 
 
+
+Objective: to compare the user input and randomly generated computer input to determine a winner and print the result
+
+1. store user input in a variable, store computer input in a variable.
+
+2. logic workflow: rock > scissor
+                   scissor > paper
+                   paper > rock
+
+3.
