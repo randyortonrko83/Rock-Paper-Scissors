@@ -25,25 +25,52 @@ function computerPlay() {
 computerPlay();
 
 function playRound(playerSelection, computerSelection) {
+       computerSelection = computerPlay();
        playerSelection = prompt("Enter a Value!");
        let player = playerSelection.toLowerCase();
        let player1 = player.substr(0,1).toUpperCase();
            player = player.substr(1);
        let final = player1 + player;
        
-       let computer = computerSelection;
-
-       
-
+       if ((final === computerSelection)) {
+         console.log(`You chose ${final}`);
+         console.log(`Computer chose ${computerSelection}`); 
+         return "It is a draw"
+       } else if (((final === "Rock" || computerSelection ===  "Scissors") && (final === "Rock" || computerSelection === "Scissors"))) {
+         console.log(`You chose ${final}`);
+         console.log(`Computer chose ${computerSelection}`);
+         return "Rock breaks Scissors, you win!"
+       } else if ((final === "Scissors" || computerSelection ===  "Rock") && (final === "Scissors" || computerSelection === "Rock")) {
+         console.log(`You chose ${final}`);
+         console.log(`Computer chose ${computerSelection}`);
+         return "Rock breaks Scissors, you lose!"
+       } else if ((final === "Scissors" || computerSelection ===  "Paper") && (final === "Scissors" || computerSelection === "Paper")) {
+         console.log(`You chose ${final}`);
+         console.log(`Computer chose ${computerSelection}`);
+         return "Scissors cuts paper, you win!"
+       } else if ((final === "Paper" || computerSelection === "Scissors") && (final === "Paper" || computerSelection === "Scissors")) {
+         console.log(`You chose ${final}`);
+         console.log(`Computer chose ${computerSelection}`);
+         return "Scissors cuts paper, you lose!"
+       } else if ((final === "Paper" || computerSelection === "Rock") && (final === "Paper" || computerSelection === "Rock")) {
+         console.log(`You chose ${final}`);
+         console.log(`Computer chose ${computerSelection}`); 
+         return "Paper wraps rock, you win!"
+       } else if ((final === "Rock" || computerSelection === "Paper") && (final === "Rock" || computerSelection === "Paper")) {
+         console.log(`You chose ${final}`);
+         console.log(`Computer chose ${computerSelection}`);
+         return "Paper wraps rock, you lose!"
+       } else { return "Invalid Input" 
       
        
+       };
+
+      
+    
 
       
       
 }
 
 
-const computerSelection = computerPlay();
-playRound();
-
-
+playRound(" ");

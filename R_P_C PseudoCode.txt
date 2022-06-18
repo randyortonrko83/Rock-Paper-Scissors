@@ -41,4 +41,6 @@ Objective: to compare the user input and randomly generated computer input to de
                    scissor > paper
                    paper > rock
 
-3.
+3. equality operator === for three other possibilities: rock === rock
+                                                        paper === paper
+                                                        scissor === scissor
