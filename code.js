@@ -36,27 +36,27 @@ function playRound(playerSelection, computerSelection) {
          console.log(`You chose ${final}`);
          console.log(`Computer chose ${computerSelection}`); 
          return "It is a draw"
-       } else if (((final === "Rock" || computerSelection ===  "Scissors") && (final === "Rock" || computerSelection === "Scissors"))) {
+       } else if (((final === "Rock" && computerSelection ===  "Scissors") && (final === "Rock" && computerSelection === "Scissors"))) {
          console.log(`You chose ${final}`);
          console.log(`Computer chose ${computerSelection}`);
          return "Rock breaks Scissors, you win!"
-       } else if ((final === "Scissors" || computerSelection ===  "Rock") && (final === "Scissors" || computerSelection === "Rock")) {
+       } else if ((final === "Scissors" && computerSelection ===  "Rock") && (final === "Scissors" && computerSelection === "Rock")) {
          console.log(`You chose ${final}`);
          console.log(`Computer chose ${computerSelection}`);
          return "Rock breaks Scissors, you lose!"
-       } else if ((final === "Scissors" || computerSelection ===  "Paper") && (final === "Scissors" || computerSelection === "Paper")) {
+       } else if ((final === "Scissors" && computerSelection ===  "Paper") && (final === "Scissors" && computerSelection === "Paper")) {
          console.log(`You chose ${final}`);
          console.log(`Computer chose ${computerSelection}`);
          return "Scissors cuts paper, you win!"
-       } else if ((final === "Paper" || computerSelection === "Scissors") && (final === "Paper" || computerSelection === "Scissors")) {
+       } else if ((final === "Paper" && computerSelection === "Scissors") && (final === "Paper" && computerSelection === "Scissors")) {
          console.log(`You chose ${final}`);
          console.log(`Computer chose ${computerSelection}`);
          return "Scissors cuts paper, you lose!"
-       } else if ((final === "Paper" || computerSelection === "Rock") && (final === "Paper" || computerSelection === "Rock")) {
+       } else if ((final === "Paper" && computerSelection === "Rock") && (final === "Paper" && computerSelection === "Rock")) {
          console.log(`You chose ${final}`);
          console.log(`Computer chose ${computerSelection}`); 
          return "Paper wraps rock, you win!"
-       } else if ((final === "Rock" || computerSelection === "Paper") && (final === "Rock" || computerSelection === "Paper")) {
+       } else if ((final === "Rock" && computerSelection === "Paper") && (final === "Rock" && computerSelection === "Paper")) {
          console.log(`You chose ${final}`);
          console.log(`Computer chose ${computerSelection}`);
          return "Paper wraps rock, you lose!"
