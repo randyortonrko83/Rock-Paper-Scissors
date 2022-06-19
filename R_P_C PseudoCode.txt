@@ -44,3 +44,11 @@ Objective: to compare the user input and randomly generated computer input to de
 3. equality operator === for three other possibilities: rock === rock
                                                         paper === paper
                                                         scissor === scissor
+
+Objective: to create a new function that can call the playRound function to let the user play the game of rock paper scissor five rounds with the computer
+
+1. create new function called game
+2. call playRound inside this function
+3. assign a variable for playRound in this function 
+4. create a for loop for 5 rounds
+5. compare the 5 rounds to determine the ultimate winner of the rock-paper-scissors.

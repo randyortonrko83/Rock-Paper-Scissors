@@ -1,4 +1,5 @@
 
+
 function computerPlay() {
 
    let game = ["Rock", "Paper", "Scissors"];
@@ -25,12 +26,15 @@ function computerPlay() {
 computerPlay();
 
 function playRound(playerSelection, computerSelection) {
+       
        computerSelection = computerPlay();
-       playerSelection = prompt("Enter a Value!");
+       playerSelection = game();
        let player = playerSelection.toLowerCase();
        let player1 = player.substr(0,1).toUpperCase();
            player = player.substr(1);
        let final = player1 + player;
+       
+      
        
        if ((final === computerSelection)) {
          console.log(`You chose ${final}`);
@@ -60,9 +64,8 @@ function playRound(playerSelection, computerSelection) {
          console.log(`You chose ${final}`);
          console.log(`Computer chose ${computerSelection}`);
          return "Paper wraps rock, you lose!"
-       } else { return "Invalid Input" 
+       } else { return "No Input" 
       
-       
        };
 
       
@@ -72,5 +75,18 @@ function playRound(playerSelection, computerSelection) {
       
 }
 
+playRound();
 
-playRound(" ");
+
+function game() {
+
+ 
+
+ for (let playerPrompt = 1; playerPrompt <= 5; playerPrompt++) {
+    
+    let playerPrompt = prompt(" ");
+    console.log(playerPrompt);
+    
+ }
+  
+}
