@@ -26,9 +26,8 @@ function computerPlay() {
 computerPlay();
 
 function playRound(playerSelection, computerSelection) {
-       
-       computerSelection = computerPlay();
-       playerSelection = game();
+
+           computerSelection = computerPlay();
        let player = playerSelection.toLowerCase();
        let player1 = player.substr(0,1).toUpperCase();
            player = player.substr(1);
@@ -75,18 +74,18 @@ function playRound(playerSelection, computerSelection) {
       
 }
 
-playRound();
+
 
 
 function game() {
 
+ let game = playRound(prompt("Enter a value please"));
  
 
- for (let playerPrompt = 1; playerPrompt <= 5; playerPrompt++) {
-    
-    let playerPrompt = prompt(" ");
-    console.log(playerPrompt);
-    
- }
-  
 }
+
+game();
+
+
+
+
