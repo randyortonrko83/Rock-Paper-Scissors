@@ -93,12 +93,12 @@ function game() {
   } else if (youWin.includes("you win!")) {
      let yourScore;
      youWin = 0;
-     yourScore = ++youWin
+     yourScore = youWin + 1
      alert(`Your Score is ${yourScore}`)
   } else if (computerWin.includes("you lose!")) {
     let computerScore;
     computerWin = 0;
-    computerScore = ++computerWin 
+    computerScore = computerWin + 1
     alert(`Computer Score is ${computerScore}`)
   }
   }
