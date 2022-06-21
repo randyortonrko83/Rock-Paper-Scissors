@@ -84,19 +84,22 @@ function game() {
     alert(game);
     let draw = (game);
     let youWin = (game);
-    let ComputerWin = (game);
+    let computerWin = (game);
     draw.toString();
     youWin.toString();
-    ComputerWin.toString();
+    computerWin.toString();
   if (draw.includes("draw")) {
-     draw = 0;
-     alert("draw success")
+     alert("Draw")
   } else if (youWin.includes("you win!")) {
-     youWin = 0 + 1;
-     alert("playerWinSuccess")
-  } else if (ComputerWin.includes("you lose!")) {
-    ComputerWin = 0 + 1;
-    alert("computerWinSuccess")
+     let yourScore;
+     youWin = 0;
+     yourScore = ++youWin
+     alert(`Your Score is ${yourScore}`)
+  } else if (computerWin.includes("you lose!")) {
+    let computerScore;
+    computerWin = 0;
+    computerScore = ++computerWin 
+    alert(`Computer Score is ${computerScore}`)
   }
   }
 
