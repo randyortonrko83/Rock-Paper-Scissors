@@ -49,6 +49,8 @@ Objective: to create a new function that can call the playRound function to let 
 
 1. create new function called game
 2. call playRound inside this function
+          (i) cannot return results from another function
+          (ii) assign playRound function to a variable inside game function and return the game variable inside that same function to get the playRound function 
 3. assign a variable for playRound in this function 
 4. create a for loop for 5 rounds
 5. compare the 5 rounds to determine the ultimate winner of the rock-paper-scissors.

@@ -76,10 +76,10 @@ function playRound(playerSelection, computerSelection) {
 
 
 
-
 function game() {
 
  let game = playRound(prompt("Enter a value please"));
+ return game;
  
 
 }
