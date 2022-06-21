@@ -80,10 +80,27 @@ function game() {
 
 
   for (let i = 0; i < 5; i++) {
-    let game = playRound(prompt("Enter a value please"));
+    let game = playRound(prompt("Enter a Value Please"));
     alert(game);
-
+    let draw = (game);
+    let youWin = (game);
+    let ComputerWin = (game);
+    draw.toString();
+    youWin.toString();
+    ComputerWin.toString();
+  if (draw.includes("draw")) {
+     draw = 0;
+     alert("draw success")
+  } else if (youWin.includes("you win!")) {
+     youWin = 0 + 1;
+     alert("playerWinSuccess")
+  } else if (ComputerWin.includes("you lose!")) {
+    ComputerWin = 0 + 1;
+    alert("computerWinSuccess")
   }
+  }
+
+
  
  
 
