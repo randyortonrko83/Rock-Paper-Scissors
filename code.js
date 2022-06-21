@@ -74,12 +74,19 @@ function playRound(playerSelection, computerSelection) {
       
 }
 
-
+let i = 0;
 
 function game() {
 
- let game = playRound(prompt("Enter a value please"));
- return game;
+
+  for (let i = 0; i < 5; i++) {
+    let game = playRound(prompt("Enter a value please"));
+    alert(game);
+
+  }
+ 
+ 
+
  
 
 }
