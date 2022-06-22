@@ -74,13 +74,14 @@ function playRound(playerSelection, computerSelection) {
       
 }
 
-let i = 0;
-
+var i = 0;
+var userScore = 0;
+var computerScore = 0;
 function game() {
 
 
   for (let i = 0; i < 5; i++) {
-    let game = playRound(prompt("Enter a Value Please"));
+    let game = playRound(prompt("You and Computer are playing enter a value between rock, paper, scissors!"));
     alert(game);
     let draw = (game);
     let youWin = (game);
@@ -91,19 +92,18 @@ function game() {
   if (draw.includes("draw")) {
      alert("Draw")
   } else if (youWin.includes("you win!")) {
-     let yourScore;
-     youWin = 0;
-     yourScore = youWin + 1
-     alert(`Your Score is ${yourScore}`)
+    userScore;
+    alert(`Your Score is ${++userScore}`)
   } else if (computerWin.includes("you lose!")) {
-    let computerScore;
-    computerWin = 0;
-    computerScore = computerWin + 1
-    alert(`Computer Score is ${computerScore}`)
-  }
+    computerScore;
+    alert(`Computer Score is ${++computerScore}`)
   }
 
+ 
 
+  }
+
+  
  
  
 
@@ -113,6 +113,18 @@ function game() {
 
 game();
 
+function judgeWinner() {
 
+  if (userScore > computerScore) {
+    alert("Congratulations! You Win the Game!")
+  } else if (computerScore > userScore) {
+    alert("Oops! Computer Won the Game!")
+  } else {
+    alert("You and Your computer are at a tie!")
+  }
+     
+}
+
+judgeWinner();
 
 
